@@ -1,1 +1,173 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {padding: 0; margin: 0;
+    background-repeat: repeat space; background-origin: border-box;
+    background-image: url("./assets/images/art/light-logo.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+    h1 { font-style: italic; font-size: 80px; font-weight: bold; color: white;
+      text-align: center;  margin-left: 100px; margin-right: 100px;
+      margin-top: 15px; margin-bottom: 15px; padding-bottom: 20px; background-color: rgba(51,51,51,1); }
+    
+    h2 {text-align: center; color: white; margin-left: 15px; padding: 10px; margin-right: 15px; background-color: black; background-position: 400; font-weight: bold; }
+    ul { background-color: rgba(127,200,255,0.3); margin-right: 0; margin-left: 0; padding-top: 50px; padding-bottom: 50px; margin-bottom: 0; text-align: center; display: block;
+    margin: 0 auto;}
+    li {text-align: center; list-style: none; margin-right: 30px; margin-top: 20px; margin-bottom: 20px; font-weight: bold;}
+    img {max-width: 100%; max-height: 700px; }
+    
+    #footer {text-align: center; font-weight: bold; font-style: italic; padding: 10px; margin: 0; background-color: black; color: white;}
+    #body {background-image: url("./assets/images/art/wordlogo-2.png"); }
+    
+    /* #bradley2 {max-width: 300px; max-height: 400px;} */
+    
+    .menu1 { color: white; font-family: sans-serif; font-style: italic; width: 100% ;text-align: center; margin: none;  }
+    .menu {background: none;  margin: 20px;  text-align: center; vertical-align: center; background-color: rgba(0, 0, 0, 0.253); width: 100%; height: 50px; margin-left: 0; padding-top: 25px;}
+    .product {padding: 10px; text-align:center; background-color: white;  }
+    .product-list {display: block;
+    margin: 0 auto; text-align:center;}
+    
+    div {text-align:center;}
+    
+    #bradley {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+                transition:         transform 2s ease-in-out;
+                transform: none;
+      }
+    #bradley:hover {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+    
+    .darkBackground {
+        background-image: url("./assets/images/art/dark-logo.png");
+        background-repeat: repeat ; background-origin: border-box;
+        color: white;
+        transition: 1s;
+
+    }
+
+    .lightBackground {
+        background-image: url("./assets/images/art/light-logo.png");
+        background-repeat: repeat space; background-origin: border-box;
+        color: black;
+        transition: 1s;
+    }
+
+    a {
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-decoration: none;
+        text-shadow: 2px 2px #ff0000;
+       
+        color: white;
+        transition: .2s;
+    
+    }
+
+    a:hover {
+        text-shadow: 20px 20px #ff0000;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px 25px;
+      }
+
+    
+      button {
+        background-color: rgb(244, 121, 255); /* Green */
+        box-shadow: 2px 5px #88888891;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition: .5s;
+        font-weight: none;
+    }
+
+    button:hover {
+        box-shadow: 4px 8px #88888891;
+        font-weight: bold;
+    }
+
+
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 5px 9px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+
+
+
+
+
+
+
+
+@media screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 1024px)  { 
+
+    
+
+    img {
+        width: 100%;
+    }
+
+    .art {
+        width: 100%;
+    }
+
+    /* #bradley {
+        width: 80%;
+
+    }
+    #word-logo {
+        width: 80%;
+
+    } */
+
+
+
+}
+
+
+
+
+
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+
+    #bradley {
+        width: 45%;
+
+    }
+    #word-logo {
+        width: 45%;
+
+    }
+
+    .art {
+        width: 50%;
+    }
+
+}

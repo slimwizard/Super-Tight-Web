@@ -1,0 +1,49 @@
+
+
+<div>
+  <ul>
+    <li *ngFor="let piece of this.artService.allArt">
+      <div>
+        <img class="art" [ngClass]="{'card':piece.title !== 'Cloud'}" src={{piece.src}} alt="" (mouseenter)="changeImage(piece)">
+        <p>{{piece.caption}}</p>
+      </div>      
+    </li>
+  </ul>
+</div>
+
+
+<div id="comment-form">
+  <label for="name">NAME: </label><br>
+  <input type="text" name="name" [(ngModel)]="name"><br>
+  <label for="comment">COMMENT: </label><br>
+  <input type="text" name="comment" [(ngModel)]="comment"><br>
+  <label for="mood">MOOD: </label><br>
+  <input type="text" name="mood" [(ngModel)]="mood"><br>
+  <button (click)="saveNewComment()">Save Comment</button><br>
+  <div id="input-error" *ngIf="inputError"><i>Please fill out all of da fields!</i></div>
+</div>
+
+
+
+<div id="comment-section">
+  <h2>Comment Section</h2>
+  <ul>
+    
+    <li *ngFor="let comment of getComments()">
+
+      <div class="comment-box card">
+        <div id="name">
+            <p><strong>{{comment.Name.toUpperCase()}}</strong></p>
+            <p><i>{{comment.Date.toDate()}}</i></p>
+        </div>
+        <div id="comment">
+          <p>{{comment.Comment}}</p>
+        </div>
+        <div class="mood">
+          <label class="mood-label" for="mood">MOOD: </label>
+          <p class="mood-value">{{comment.Mood}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

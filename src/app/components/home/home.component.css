@@ -1,0 +1,64 @@
+
+#comment-section li {
+    background-color: white;
+    transition: .5s;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+
+}
+
+#comment-section li:hover {
+    background-color: white;
+    text-shadow: 2px 3px  rgba(127,200,255,0.5);
+    border-style: solid;
+}
+
+
+input[type=text] {
+    width: 80%;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#name {
+    background-color: rgba(127,200,255,0.3);
+    text-shadow: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.mood {
+    text-align: right;
+    padding: 10px;
+    
+}
+
+.mood-label {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.mood-value {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#input-error {
+    color: red;
+    padding: 15px;
+}
+
+#comment-form {
+    padding: 25px;
+}
+
+#comment {
+    padding: 5px;
+    text-align: left;
+}
+
+
+
