@@ -48,8 +48,16 @@ body {padding: 0; margin: 0;
 
     }
 
-    .darkBackground p {
-        text-shadow: 20px 20px 20px black;
+    .darkBackground p{
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    .darkBackground label{
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    .darkBackground .comment-box p{
+        text-shadow: none;
     }
 
     .lightBackground {
