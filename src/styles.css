@@ -48,6 +48,10 @@ body {padding: 0; margin: 0;
 
     }
 
+    .darkBackground p {
+        background-color: black;
+    }
+
     .lightBackground {
         background-image: url("./assets/images/art/light-logo.png");
         background-repeat: repeat space; background-origin: border-box;
