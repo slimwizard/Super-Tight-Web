@@ -49,7 +49,7 @@ body {padding: 0; margin: 0;
     }
 
     .darkBackground p {
-        background-color: black;
+        text-shadow: black;
     }
 
     .lightBackground {
