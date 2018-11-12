@@ -16,7 +16,7 @@ export class UserCommentService {
   moment: moment.Moment
   constructor(private db: AngularFirestore) { 
     this.comments = []
-    db.collection("/UserComments2", ref => ref.orderBy("Date", "desc"))
+    db.collection("/UserComments", ref => ref.orderBy("Date", "desc"))
     .valueChanges()
     .subscribe(data => {
       this.comments = data
