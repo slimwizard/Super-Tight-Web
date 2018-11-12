@@ -42,7 +42,7 @@ export class UserCommentService {
     let niceDate = new Date()
     let realDate = new Date().toJSON()
     
-    this.db.collection("/UserComments2").add({
+    this.db.collection("/UserComments").add({
       "Name": name,
       "Comment": comment,
       "Mood": mood,
