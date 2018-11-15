@@ -45,7 +45,7 @@ export class UserCommentService {
       "Name": name,
       "Comment": comment,
       "Mood": mood,
-      "Date": commentDateTime
+      "Date": _commentDateTime
     })
   }
 
