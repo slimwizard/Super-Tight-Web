@@ -20,7 +20,6 @@ export class UserCommentService {
     .valueChanges()
     .subscribe(data => {
       this.comments = data
-      console.log(moment(this.comments[0].Date.toDate()).format())
     })
     
   }
@@ -46,7 +45,7 @@ export class UserCommentService {
       "Name": name,
       "Comment": comment,
       "Mood": mood,
-      "Date": niceDate
+      "Date": commentDateTime
     })
   }
 
