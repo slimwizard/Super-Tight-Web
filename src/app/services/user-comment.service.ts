@@ -38,8 +38,7 @@ export class UserCommentService {
     + commentDateTime.getFullYear() + " @ "  
     + (Number(commentDateTime.getHours())%12) + ":"  
     + commentDateTime.getMinutes().toPrecision(2)
-    let niceDate = new Date()
-    let realDate = new Date().toJSON()
+    _commentDateTime += Number(commentDateTime.getHours()) > 12 ? " pm" : " am"
     
     this.db.collection("/UserComments").add({
       "Name": name,
